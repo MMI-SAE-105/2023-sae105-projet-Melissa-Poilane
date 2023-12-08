@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Novecento';
+    src: url("/src/fonts/novecento_conddemibold.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'LCD2';
+    src: url("/src/fonts/lcd2.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Dax';
+    src: url("/src/fonts/dax_condensed.otf") format("truetype");
+    font-weight: normal;
+}
