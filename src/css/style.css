@@ -2,11 +2,16 @@
 @import "/src/css/utils/fonts.css";
 
 /* Vendors */
+@import "/src/css/vendors/normalize.css";
 
 /* Utils */
+@import "/src/css/utils/variables.css";
 
 /* Base */
 @import "/src/css/base/main.css";
+
 /* Layout */
 @import "/src/css/layout/footer.css";
+
 /* Components */
+@import"/src/css/components/menu.css";
