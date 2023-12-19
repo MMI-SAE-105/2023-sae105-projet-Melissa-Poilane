@@ -13,61 +13,61 @@
 
 </head>
 
-<body x-data="{ atTop: true }">
+<body id="top" x-data="{ atTop: true }">
 
-
-
-    <header @scroll.window="atTop = ( window.scrollY > 300 ? false : true )" :class="{ 'header--atTop' : }">
-        <div>
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+        :class="{ 'header--atTop' : }">
+        <div class="header__start">
             <a href="/fr/index.html">
-                <img src="/public/icones/logo-dgrad-fr.svg" alt="Logo du site">
+                <img class="header__logo" src="/public/icones/logo-dgrad-fr.svg" alt="Logo du site">
             </a>
         </div>
-        <div>
+        <div class="header__end">
             <button class="header__menu-btn menu-btn" aria-label="Menu" aria-controls="mainNav"
                 @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
                 <span class="menu-btn__hamburger"></span>
             </button>
             <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
-                <ul>
-                    <li>
-                        <a href="/fr/index.html">Accueil</a>
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/index.html">Accueil</a>
                     </li>
-                    <li>
-                        <a href="/fr/replique.html">Une réplique culte</a>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/replique.html">Une réplique culte</a>
                     </li>
-                    <li>
-                        <a href="/fr/musique.html">La signature musicale</a>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/musique.html">La signature musicale</a>
                     </li>
-                    <li>
-                        <a href="/fr/realisateur.html">Un réalisateur de génie</a>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/realisateur.html">Un réalisateur de génie</a>
                     </li>
-                    <li>
-                        <a href="/fr/livre.html">peut-on voyager dans
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/livre.html">peut-on voyager dans
                             le temps ?</a>
                     </li>
-                    <li>
-                        <a href="/fr/film.html">Retour vers le futur 2</a>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/film.html">Retour vers le futur 2</a>
                     </li>
-                    <li>
-                        <a href="/fr/about.html">A propos</a>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/about.html">A propos</a>
                     </li>
                 </ul>
             </nav>
     </header>
     <main>
-        <div>
-            <div>
-                <h1>On n’a pas besoin… de route.</h1>
-                <figure>
+        <div class="hero">
+            <div class="hero__header container">
+                <h1 class="hero__title">On n’a pas besoin… de route.</h1>
+                <figure class="hero__img duotone">
                     <img src="/public/img/accueil.webp" alt="image de doc emmet brown">
                 </figure>
             </div>
             <div>
-                <img class="assenceur" src="/public/icones/fleche-scroll-accueil.svg" alt="icone de fleche">
+                <img class="scroll" src="/public/icones/fleche-scroll-accueil.svg" alt="icone de fleche">
             </div>
-            <div>
-                <p>Bienvenue dans l’univers intemporel de Retour vers le futur ! Ici la science-fiction et l’aventure
+            <div class="hero__chapo chapo container">
+                <p class="chapo__text">Bienvenue dans l’univers intemporel de Retour vers le futur ! Ici la
+                    science-fiction et l’aventure
                     font équipe pour vous
                     faire voyager dans le temps.</p>
             </div>
@@ -264,7 +264,7 @@
                         emblématiques de la
                         saga.</p>
                     <div>
-                        <a href="#">Bibliothèque de Magie</a>
+                        <a href="https://bibliothequemagique.edouardhashimoto.fr/">Bibliothèque de Magie</a>
                     </div>
                 </div>
                 <img src="/public/img/cards/autre-projets/edouart-hashimoto.webp" alt="mockup du site">
