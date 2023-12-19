@@ -6,7 +6,7 @@
 /* Utils */
 
 /* Base */
-
+@import "/src/css/base/main.css";
 /* Layout */
-
+@import "/src/css/layout/footer.css";
 /* Components */
