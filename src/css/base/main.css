@@ -2,6 +2,19 @@ html {
     scroll-behavior: smooth;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Les règles typographiques générales qui s'appliquent à tout le site */
+body {
+    font-family: var(--font-dax);
+    font-size: var(--text-md);
+    line-height: 1.6;
+    background-color: var(--gray-white);
+}
 
 /* pour enlever le scroll */
 .noscroll,

@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Novecento';
-    src: url('novecento_conddemibold_2-webfont.woff2') format('woff2'),
-        url('novecento_conddemibold_2-webfont.woff') format('woff');
+    src: url('/src/fonts/novecento_conddemibold_2-webfont.woff2') format('woff2'),
+        url('/src/fonts/novecento_conddemibold_2-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -12,8 +12,8 @@
 
 @font-face {
     font-family: 'LCD2';
-    src: url('lcd2_1-webfont.woff2') format('woff2'),
-        url('lcd2_1-webfont.woff') format('woff');
+    src: url('/src/fonts/lcd2_1-webfont.woff2') format('woff2'),
+        url('/src/fonts/lcd2_1-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -24,8 +24,8 @@
 
 @font-face {
     font-family: 'Dax';
-    src: url('dax_condensed_1-webfont.woff2') format('woff2'),
-        url('dax_condensed_1-webfont.woff') format('woff');
+    src: url('/src/fonts/dax_condensed_1-webfont.woff2') format('woff2'),
+        url('/src/fonts/dax_condensed_1-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

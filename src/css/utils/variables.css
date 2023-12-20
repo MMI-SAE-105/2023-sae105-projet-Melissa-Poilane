@@ -28,9 +28,9 @@
     --body-4: 1.38rem;
 
     /* Polices de caractère */
-    --font-mono: "Space Mono", monospace;
-    --font-sans-serif: "Mulish", sans-serif;
-    --font-lcd2: "LCD2", sans-serif;
+    --font-novecento: 'Novecento';
+    --font-dax: 'Dax';
+    --font-lcd2: 'LCD2';
 
     /* Font variantes */
     --letter-spacing: 0.05em;
