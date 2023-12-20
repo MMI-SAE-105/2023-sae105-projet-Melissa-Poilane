@@ -1,0 +1,26 @@
+.header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: var(--space3x);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header--atTop {
+    background-color: var(--gris-normal);
+}
+
+
+.header__start,
+.header__end {
+    z-index: 3;
+}
+
+.header__logo {
+    width: 89px;
+    height: auto;
+}
