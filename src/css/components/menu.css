@@ -15,7 +15,7 @@
 }
 
 
-.menu__liste {
+.menu__list {
     top: 0;
     left: 0;
     width: 100vw;
@@ -24,19 +24,29 @@
     place-content: center;
 }
 
-.menu__titre {
+.menu__item {
     margin-top: var(--space2x);
     color: var(--blanc);
     font-family: var(--heading-moyen);
-    border-bottom: 2px solid;
-    border-color: var(--beige-intermediaire);
     text-align: center;
-    padding-bottom: var(--space3x);
+    padding: var(--space2x);
+
 }
 
-.menu__lien {
+.menu__item::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--orange-normal);
+    margin: auto;
+    width: 25%;
+    padding-top: var(--space1x);
+}
+
+.menu__link {
     color: var(--blanc);
     text-decoration: none;
+    font-family: var(--font-novecento);
+    font-size: var(--heading-4);
 }
 
 .menu-btn {
@@ -44,6 +54,7 @@
     height: 30px;
     position: relative;
 }
+
 
 .menu-btn__hamburger,
 .menu-btn__hamburger::before,
@@ -58,6 +69,7 @@
     z-index: 3;
     transition: all 0.4s ease-in-out;
 }
+
 
 .menu-btn__hamburger::before {
     top: -10px;
