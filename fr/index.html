@@ -16,7 +16,7 @@
 <body id="top" x-data="{ atTop: true }">
 
     <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
-        :class="{ 'header--atTop' : }">
+        :class="{ 'header--atTop' : !atTop }">
         <div class="header__start">
             <a href="/fr/index.html">
                 <img class="header__logo" src="/public/icones/logo-dgrad-fr.svg" alt="Logo du site">
