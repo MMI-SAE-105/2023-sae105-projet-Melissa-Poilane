@@ -29,7 +29,7 @@ figure {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: var(--brand-violet);
+    background-color: #1D0D5B;
     z-index: 1;
     mix-blend-mode: lighten;
 }

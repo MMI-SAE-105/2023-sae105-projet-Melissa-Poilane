@@ -69,6 +69,10 @@ button {
     padding-right: var(--space3x);
 }
 
+.container-card {
+    padding: 0;
+}
+
 /* pour enlever le scroll */
 .noscroll,
 .noscroll body {

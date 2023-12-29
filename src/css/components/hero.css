@@ -17,6 +17,7 @@
 
 .hero__chapo {
     min-height: 20svh;
+    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
