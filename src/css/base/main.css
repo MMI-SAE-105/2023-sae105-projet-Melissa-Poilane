@@ -61,6 +61,23 @@ span {
     color: var(--orange-normal);
 }
 
+section>h2 {
+    margin-bottom: var(--space2x);
+    display: flex;
+    justify-content: center;
+    padding-top: var(--space2x);
+    position: relative;
+}
+
+section>h2::before {
+    content: "";
+    position: absolute;
+    width: 260px;
+    top: 0;
+    border-top: 2px solid var(--rouge);
+}
+
+
 /* Classes universelles */
 .list-unstyled {
     list-style: none;
