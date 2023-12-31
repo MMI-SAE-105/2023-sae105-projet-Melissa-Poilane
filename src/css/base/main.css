@@ -37,6 +37,7 @@ h3 {
     font-family: var(--font-lcd2);
     font-size: var(--heading-3);
     line-height: 80%;
+    font-weight: 400;
 }
 
 h4 {
