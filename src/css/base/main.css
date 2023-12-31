@@ -78,6 +78,12 @@ section>h2::before {
     border-top: 2px solid var(--rouge);
 }
 
+.card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
 
 /* Classes universelles */
 .list-unstyled {

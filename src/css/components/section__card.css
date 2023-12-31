@@ -9,12 +9,6 @@
     margin-bottom: 0;
 }
 
-.card {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: inline-flex;
-}
 
 .card__title {
     width: 100%;
