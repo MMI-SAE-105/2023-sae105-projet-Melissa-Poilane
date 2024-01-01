@@ -78,13 +78,12 @@
 }
 
 .duotone-section {
-    border-radius: 5px;
+    border-radius: 9px;
     background-color: #D97B29;
     position: relative;
 }
 
 .duotone-section>img {
-    /* Filtres pour passer l'image en noir et blanc et appliquer l'effet de bichromie */
     filter: grayscale(100%);
     display: block;
     mix-blend-mode: multiply;

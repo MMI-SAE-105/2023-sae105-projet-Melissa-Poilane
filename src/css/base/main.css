@@ -106,3 +106,10 @@ section>h2::before {
 .noscroll body {
     overflow: hidden;
 }
+
+.center-cast {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
