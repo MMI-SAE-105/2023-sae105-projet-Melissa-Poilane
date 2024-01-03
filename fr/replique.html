@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On n'a pas besoin de route</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="icon" href="/public/img/personnel.png">
+    <link rel="alternate" hreflang="en" href="/en/index.html">
+
+
+</head>
+
+<body id="top" x-data="{ atTop: true }">
+
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+        :class="{ 'header--atTop' : !atTop }">
+        <div class="header__start">
+            <a href="/fr/index.html">
+                <img class="header__logo" src="/public/icones/logo-dgrad-fr.svg" alt="Logo du site">
+            </a>
+        </div>
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="Menu" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__hamburger"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/index.html">Accueil</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/replique.html">Une réplique culte</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/musique.html">La signature musicale</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/realisateur.html">Un réalisateur de génie</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/livre.html">peut-on voyager dans
+                            le temps&nbsp;?</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/film.html">Retour vers le futur&nbsp;2</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/about.html">A propos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="hero-article">
+            <div class="hero-article__header container">
+                
+                <h1 class="hero-article__title">La réplique emblématique&nbsp;: «&nbsp;La où l'on va, on n'a pas besoin... de route.&nbsp;»</h1>
+               <div class="hero-article__subtitle">
+                <p >De Mélissa Poilâne</p>
+                <p>Pulbié le 25/10/2023</p>
+                </div>
+                <figure class="hero__img duotone">
+                    <img src="/public/img/articles/replique1.webp" alt="image de doc emmet brown">
+                </figure>
+            </div>
+            <div>
+                <img class="hero-article__scroll" src="/public/icones/fleche-scroll.svg" alt="icone de fleche">
+            </div>
+            <div class="hero__chapo chapo container">
+                <p class="chapo__text">« La où l'on va, on n'a pas besoin... de route », Une expression emblématique qui résonne dans la mémoire collective des amateurs de sciencefiction.</p>
+            </div>
+        </div>
