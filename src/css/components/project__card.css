@@ -12,7 +12,7 @@
 }
 
 .projets__content {
-    width: 239px;
+    width: auto;
     height: 111px;
     flex-direction: column;
     gap: 7px;
@@ -21,7 +21,6 @@
 
 .projets__title {
     margin-top: 0;
-    width: 255px;
     color: var(--noir);
     font-size: var(--heading-2);
     letter-spacing: var(--letter-spacing);
@@ -30,7 +29,7 @@
 .projets__text {
     margin-top: -20px;
     margin-bottom: 0;
-    width: 236px;
+    width: auto;
     height: 44px;
     color: var(--noir);
     font-size: var(--body-3);
