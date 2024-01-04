@@ -5,11 +5,15 @@
     justify-content: center;
     align-items: center;
     display: inline-flex;
-    margin: var(--space2x);
+    margin: 0 var(--space2x) ;
     margin-bottom: 0;
 }
 
-
+.container-section-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space3x);
+}
 .card__title {
     width: 100%;
     text-align: center;

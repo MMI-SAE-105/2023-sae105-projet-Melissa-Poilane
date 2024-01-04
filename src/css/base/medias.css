@@ -6,7 +6,25 @@ video {
 
 figure {
     margin: 0;
-}
+  }
+
+  .figure__img>img {
+   border-radius: 5px;
+   width: 100%;
+   
+  }
+
+  .figure__img{
+    width: 100%;
+    padding: 0 var(--space2x) 0 var(--space2x);
+    
+  }
+
+  .figure__legende {
+    font-size: var(--body-3);
+    line-height: 1;
+    color: var(--orange-clair);
+  }
 
 .duotone {
     background-color: #D97B29;
@@ -32,4 +50,10 @@ figure {
     background-color: #1D0D5B;
     z-index: 1;
     mix-blend-mode: lighten;
+}
+
+.play{
+  position: absolute;
+  top: 10px;
+  right: 5px;
 }

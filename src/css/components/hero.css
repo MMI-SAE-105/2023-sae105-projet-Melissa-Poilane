@@ -64,3 +64,9 @@ top: 65vh;
     height: 13%;
     object-fit: cover;
 }
+
+.hero-article__chapo{
+    font-size: var(--body-4);
+    padding-top: var(--space6x);
+    
+}
