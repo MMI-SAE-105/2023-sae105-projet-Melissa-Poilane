@@ -107,14 +107,7 @@ section>h2::before {
     overflow: hidden;
 }
 
-.center-cast {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-}
-
-div>h2{
+.sub-title__paragraphe {
     color: var(--rouge);
     line-height: 0;
 }
@@ -125,4 +118,19 @@ div>h2{
 
 .video{
     position: relative;
+}
+
+.center-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    justify-items: center;
+    align-items: center;
+    grid-gap: var(--space2x);
+}
+
+.last-card {
+    margin-top: var(--space2x);
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
