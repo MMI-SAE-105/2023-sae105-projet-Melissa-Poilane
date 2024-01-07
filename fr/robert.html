@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On n'a pas besoin de route</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="icon" href="/public/img/personnel.png">
+    <link rel="alternate" hreflang="en" href="/en/robert.html">
+
+
+</head>
+
+<body id="top" x-data="{ atTop: true }">
+
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+        :class="{ 'header--atTop' : !atTop }">
+        <div class="header__start">
+            <a href="/fr/index.html">
+                <img class="header__logo" src="/public/icones/logo-dgrad-fr.svg" alt="Logo du site">
+            </a>
+        </div>
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="Menu" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__hamburger"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/index.html">Accueil</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/replique.html">Une réplique culte</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/musique.html">La signature musicale</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/realisateur.html">Un réalisateur de génie</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/livre.html">peut-on voyager dans
+                            le temps&nbsp;?</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/film.html">Retour vers le futur&nbsp;2</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/about.html">A propos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="hero-article">
+            <div class="hero-article__header container">
+                
+                <h1 class="hero-article__title">Robert Zemeckis</h1>
+               <div class="hero-article__subtitle">
+                <p >De Mélissa Poilâne</p>
+                <p>Pulbié le 25/10/2023</p>
+                </div>
+                <figure class="hero__img duotone">
+                    <img src="/public/img/cast/robert1.webp" alt="image de Robert Zemeckis">
+                </figure>
+            </div>
+            <div>
+                <img class="hero-article__scroll" src="/public/icones/fleche-scroll.svg" alt="icone de fleche">
+            </div>
+            <div class="hero-article__chapo chapo container">
+                <p class="chapo__text">Réalisateur visionnaire de Retour vers le futur et Forrest Gump, maître des effets spéciaux et du storytelling captivant.
+                </p>
+            </div>
+        </div>
+
+        <div class="figure">
+            <figure class="figure__img">
+                <img src="/public/img/cast/robert2.webp" alt="image de Robert Zemeckis">
+                <figcaption class="figure__legende">Robert Zemeckis – Le réalisateur de la trilogie</figcaption>
+            </figure>
+        </div>
+<div class="container">
+        <p>Robert Zemeckis est un nom vénéré dans l'industrie cinématographique. Né en 1952 à Chicago, ce <span>réalisateur</span>, scénariste et producteur américain a fait une marque indélébile grâce à sa vision créative. 
+            Il est particulièrement célèbre pour avoir dirigé la trilogie «&nbsp;Retour vers le Futur.&nbsp;» </p>
+            <p>En tant que réalisateur de la trilogie «&nbsp;Retour vers le Futur&nbsp;» Robert Zemeckis a façonné l'histoire du cinéma. Il a su mélanger habilement aventure, sciencefiction, comédie et voyages dans le temps pour créer un chef-d'œuvre <span>intemporel</span>. </p>
+
+            <p>Son talent a permis de donner vie à l'histoire originale de Bob Gale en transformant l'extraordinaire voyage de Marty McFly en un film mémorable. 
+                Grâce à sa vision, «&nbsp;Retour vers le Futur&nbsp;» est devenu un incontournable du cinéma, offrant un voyage passionnant à travers le temps et l'espace.</p>
+</div>
+                <div class="container">
+                    <h2 class="sub-title">En savoir +</h2>
+                </div>
+                
+                      <div class="wiki-card">
+                        <div class="wiki-card__content">
+                            <h2 class="wiki-card__title">Robert Zemeckis</h2>
+                            <p class="wiki-card__content">Robert Zemeckis, est un réalisateur de renommé, connu pour sa vision innovante et ses films emblématiques. </p>
+                            <div class="wiki-card__btn">
+                                <a class="wiki-card__btn--content" href="https://fr.wikipedia.org/wiki/Robert_Zemeckis">Plus d’infos</a>
+                            </div>
+                        </div>
+                      </div>
+                      <section class="container">
+                        <h2>Rencontrez la distribution</h2>
+                
+                
+                        <div class="center-card">
+                            
+                
+                            <div class="cast__card">
+                                <a href="/fr/bob.html">
+                                <figure class="cast__img">
+                                    <img src="/public/img/cards/cast/bob.webp" alt="photo de bob gale">
+                                </figure> </a>
+                                <div class="cast__text">
+                                    <a href="/fr/bob.html">
+                                    <div class="cast__title">
+                                        <h3>Bob Gale</h3>
+                                    </div></a>
+                                </div>
+                            </div>
+                
+                            <div class="cast__card">
+                                <a href="/fr/marty.html">
+                                <figure class="cast__img">
+                                    <img src="/public/img/cards/cast/marty.webp" alt="photo de michael J. Fox">
+                                </figure></a>
+                                <div class="cast__text">
+                                    <a href="/fr/marty.html">
+                                    <div class="cast__title">
+                                        <h3>Michael J. Fox</h3>
+                                    </div></a>
+                                </div>
+                            </div>
+                
+                            <div class="cast__card">
+                                <a href="/fr/doc.html">
+                                <figure class="cast__img">
+                                    <img src="/public/img/cards/cast/doc.webp" alt="photo de Christopher Lloyd">
+                                </figure></a>
+                                <div class="cast__text">
+                                    <a href="/fr/doc.html">
+                                    <div class="cast__title-long">
+                                        <h3>Christopher Lloyd</h3>
+                                    </div></a>
+                                </div>
+                            </div>
+                
+                            <div class="cast__card">
+                                <a href="/fr/loraine.html">
+                                <figure class="cast__img">
+                                    <img src="/public/img/cards/cast/lea.webp" alt="photo de Lea Thompson">
+                                </figure></a>
+                                <div class="cast__text">
+                                    <a href="/fr/loraine.html">
+                                    <div class="cast__title">
+                                        <h3>Lea Thompson</h3>
+                                    </div></a>
+                                </div>
+                            </div>
+                
+                            <div class="cast__card">
+                                <a href="/fr/griff.html">
+                                <figure class="cast__img">
+                                    <img src="/public/img/cards/cast/tom.webp" alt="photo de Tom Wilson">
+                                </figure></a>
+                                <div class="cast__text">
+                                    <a href="/fr/griff.html">
+                                    <div class="cast__title">
+                                        <h3>Tom Wilson</h3>
+                                    </div></a>
+                                </div>
+                            </div>
+                
+                            <div class="cast__card">
+                                <a href="/fr/jennyfer.html">
+                                <figure class="cast__img">
+                                    <img src="/public/img/cards/cast/claudia.webp" alt="photo de Claudia Wells">
+                                </figure></a>
+                                <div class="cast__text">
+                                    <a href="/fr/jennyfer.html">
+                                    <div class="cast__title">
+                                        <h3>Claudia Wells</h3>
+                                    </div></a>
+                                </div>
+                            </div>
+                
+                            <div class="cast__card">
+                                <a href="/fr/mary.html">
+                                <figure class="cast__img">
+                                    <img src="/public/img/cards/cast/mary.webp" alt="photo de Mary Steenburgen">
+                                </figure></a>
+                                <div class="cast__text">
+                                    <a href="/fr/mary.html">
+                                    <div class="cast__title-long">
+                                        <h3>Mary Steenburgen</h3>
+                                    </div></a>
+                                </div>
+                            </div>
+                
+                            <div class="cast__card">
+                                <a href="/fr/crispin.html">
+                                <figure class="cast__img">
+                                    <img src="/public/img/cards/cast/crispin.webp" alt="photo de Crispin Glover">
+                                </figure></a>
+                                <div class="cast__text">
+                                    <a href="/fr/crispin.html">
+                                    <div class="cast__title">
+                                        <h3>Crispin Glover</h3>
+                                    </div></a>
+                                </div>
+                            </div>
+                
+                            <div class="cast__card">
+                                <a href="/fr/jeffrey.html">
+                                <figure class="cast__img">
+                                    <img src="/public/img/cards/cast/jeffrey.webp" alt="photo de Jeffrey  Weissman">
+                                </figure></a>
+                                <div class="cast__text">
+                                    <a href="/fr/jeffrey.html">
+                                    <div class="cast__title-long">
+                                        <h3>Jeffrey Weissman</h3>
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <section class="container">
+                        <h2>Votre avis nous intéresse !</h2>
+                        <p>Votre avis est essentiel ! Nous aimerions entendre ce que vous pensez de notre site. Votre contribution nous aide à façonner une expérience utilisateurs toujours meilleure. Nous sommes impatients de vous écouter !</p>
+                    </section>
