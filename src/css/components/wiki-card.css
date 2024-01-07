@@ -1,19 +1,19 @@
 .wiki-card {
-    background: var(--blanc); 
-    padding: 20px 24px; 
-    border-radius: 7px; 
-    justify-content: center; 
-    align-items: center; 
+    background: var(--blanc);
+    padding: 20px 24px;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
     display: inline-flex;
     margin: var(--space1x) var(--space2x);
 }
 
 .wiki-card-film {
-    background: var(--blanc); 
-    padding: var(--space1x); 
-    border-radius: 7px; 
-    justify-content: center; 
-    align-items: center; 
+    background: var(--blanc);
+    padding: var(--space1x);
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
     display: inline-flex;
     margin: var(--space1x) var(--space2x);
     margin-bottom: 0;
@@ -28,64 +28,37 @@
 }
 
 .wiki-card__title {
-    width: 100%; 
-    color: var(--noir); 
+    width: 100%;
+    color: var(--noir);
     line-height: 1;
     margin-top: var(--space1x);
 }
 
-.wiki-card-film__title{
-    width: 100%; 
-    color: var(--noir); 
+.wiki-card-film__title {
+    width: 100%;
+    color: var(--noir);
     line-height: 1;
     margin-top: var(--space1x);
 }
 
 .wiki-card__content {
-    width: 100%; 
-    flex-direction: column;  
-    display: inline-flex; 
-    color: var(--noir); 
-    font-size: var(--body-2); 
-    text-transform: capitalize; 
+    width: 100%;
+    flex-direction: column;
+    display: inline-flex;
+    color: var(--noir);
+    font-size: var(--body-2);
+    text-transform: capitalize;
     line-height: 1;
     margin-top: 0;
 }
 
 .wiki-card-film__content {
-    flex-direction: column;  
-    display: inline-flex; 
-    color: var(--noir); 
-    text-transform: capitalize; 
+    flex-direction: column;
+    display: inline-flex;
+    color: var(--noir);
+    text-transform: capitalize;
     line-height: 1;
     width: 90%;
-    font-size: var(--body-3); 
+    font-size: var(--body-3);
     margin-top: 0;
-}
-
-.wiki-card__btn {
-    width: 100%; 
-    flex-direction: column; 
-    align-items: flex-end; 
-    display: flex;
-}
-
-.wiki-card__btn--content {
-    color: var(--noir); 
-    font-size: var(--button); 
-    text-transform: uppercase;
-    letter-spacing: var(--letter-big-spacing);
-    font-family: var(--font-novecento);
-    text-decoration: none;
-    margin-right: var(--space2x);
-    padding-bottom: var(--space1x);
-}
-
-.wiki-card__btn--content::after {
-    content: "";
-    display: block;
-    margin: auto;
-    width: 100%;
-    padding-top: 3px;
-    border-bottom: 2px var(--noir) solid;
 }
