@@ -84,3 +84,54 @@
     background-position: 50% 50% ;
     transition: background 0.5s;
 }
+
+.film1 .back {
+    background: url(/public/img/cards/flipables/film1-2.webp) ;
+    background-size: cover;
+}
+
+.film1 .front {
+    background-image: url(/public/img/cards/flipables/film1-1.webp);
+    background-size: 100%;
+    transition: background 0.3s;
+}
+
+.film1 .front:hover {
+    background-size: 110%;
+    background-position: 50% 50% ;
+    transition: background 0.5s;
+}
+
+.film2 .back {
+    background: url(/public/img/cards/flipables/film2-2.webp) ;
+    background-size: cover;
+}
+
+.film2 .front {
+    background-image: url(/public/img/cards/flipables/film2-1.webp);
+    background-size: 100%;
+    transition: background 0.3s;
+}
+
+.film2 .front:hover {
+    background-size: 110%;
+    background-position: 50% 50% ;
+    transition: background 0.5s;
+}
+
+.film3 .back {
+    background: url(/public/img/cards/flipables/film3-2.webp) ;
+    background-size: cover;
+}
+
+.film3 .front {
+    background-image: url(/public/img/cards/flipables/film3-1.webp);
+    background-size: 100%;
+    transition: background 0.3s;
+}
+
+.film3 .front:hover {
+    background-size: 110%;
+    background-position: 50% 50% ;
+    transition: background 0.5s;
+}
