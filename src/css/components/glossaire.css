@@ -1,0 +1,17 @@
+.glossaire {
+    margin-top: var(--space5x);
+}
+
+.glossaire__def {
+    margin-bottom: var(--space4x);
+}
+
+.glossaire__title {
+    margin-bottom: 0;
+    color: var(--orange-normal);
+}
+
+.glossaire__content {
+    margin-top: 0;
+    color: var(--gris-clair);
+}

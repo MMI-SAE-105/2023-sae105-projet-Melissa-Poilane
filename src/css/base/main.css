@@ -58,9 +58,6 @@ button {
     cursor: pointer;
 }
 
-span {
-    color: var(--orange-normal);
-}
 
 section>h2 {
     margin-bottom: var(--space2x);
@@ -76,6 +73,11 @@ section>h2::before {
     width: 260px;
     top: 0;
     border-top: 2px solid var(--rouge);
+}
+
+span>a {
+    text-decoration: none;
+    color: var(--orange-normal);
 }
 
 .card {
@@ -116,7 +118,7 @@ section>h2::before {
     padding-top: var(--space2x);
 }
 
-.video{
+.video {
     position: relative;
 }
 
