@@ -136,3 +136,19 @@ span>a {
     justify-items: center;
     align-items: center;
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.other-page__debut {
+    margin-top: var(--space5x);
+}
+
+.hebergeur {
+    margin-top: 0;
+    line-height: 0;
+}
