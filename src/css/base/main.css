@@ -152,3 +152,53 @@ span>a {
     margin-top: 0;
     line-height: 0;
 }
+
+.citation {
+    padding: var(--space1x) var(--space2x);
+}
+
+
+blockquote {
+    position: relative;
+    margin: 0;
+
+}
+
+blockquote:before {
+    content: "";
+    display: block;
+    border-top: 1.5px solid var(--orange-normal);
+    margin: auto;
+    width: 100%;
+    padding-top: var(--space2x);
+}
+
+blockquote p {
+    margin: 0;
+}
+
+.citation__name {
+    position: relative;
+    text-align: right;
+    margin-top: var(--space2x);
+}
+
+.citation__name:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-top: 1.5px solid var(--orange-normal);
+    margin: auto;
+    width: 100%;
+}
+
+.citation__name>span {
+    display: inline-block;
+    position: relative;
+    margin-right: 40px;
+    padding: 0 8px;
+    background: var(--noir);
+    z-index: 1;
+}
