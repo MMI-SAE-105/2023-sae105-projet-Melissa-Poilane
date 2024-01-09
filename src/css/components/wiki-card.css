@@ -2,21 +2,21 @@
     background: var(--blanc);
     padding: 20px 24px;
     border-radius: 7px;
+    margin: var(--space1x) var(--space2x);
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: inline-flex;
-    margin: var(--space1x) var(--space2x);
 }
 
 .wiki-card-film {
     background: var(--blanc);
     padding: var(--space1x);
     border-radius: 7px;
-    justify-content: center;
-    align-items: center;
-    display: inline-flex;
     margin: var(--space1x) var(--space2x);
     margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -28,7 +28,6 @@
 }
 
 .wiki-card__title {
-    width: 100%;
     color: var(--noir);
     line-height: 1;
     margin-top: var(--space1x);
@@ -54,7 +53,7 @@
 
 .wiki-card-film__content {
     flex-direction: column;
-    display: inline-flex;
+    display: flex;
     color: var(--noir);
     text-transform: capitalize;
     line-height: 1;
