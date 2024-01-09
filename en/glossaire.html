@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We don't need... Roads.</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="icon" href="/public/img/personnel.png">
+    <link rel="alternate" hreflang="fr" href="/fr/glossaire.html">
+
+
+</head>
+
+<body id="top" x-data="{ atTop: true }">
+
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+        :class="{ 'header--atTop' : !atTop }">
+        <div class="header__start">
+            <a href="/en/index.html">
+                <img class="header__logo" src="/public/icones/logo-dgrad-en.svg" alt="Website logo">
+            </a>
+        </div>
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="Menu" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__hamburger"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/index.html">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/replique.html">The Iconic Quote</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/musique.html">The musical signature</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/realisateur.html">A genius director</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/livre.html">Can We Time Travel&nbsp;?</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/film.html">Back to the Future Part&nbsp;II</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="replique">
+        <div class="hero-other">
+            <div class="hero-other__header container">
+
+                <h1 class="hero-other__title">Glossaire</h1>
+
+                <figure class="hero__img duotone">
+                    <img src="/public/img/glossaire.webp" alt="photo des coulisses">
+                </figure>
+            </div>
+            <div>
+                <img class="hero-other__scroll" src="/public/icones/fleche-scroll.svg" alt="icone de fleche">
+            </div>
+
+        </div>
+        <div class=" container other-page__debut">
+            <div id="exuberance" class="glossaire__def">
+                <h2 class="glossaire__title">Réplique de film</h2>
+                <p class="glossaire__content">Une phrase ou un morceau de dialogue mémorable d'un film, souvent cité ou
+                    reconnu par les
+                    spectateurs.
+                </p>
+            </div>
+
+            <div id="transcender" class="glossaire__def">
+                <h2 class="glossaire__title">Exubérance</h2>
+                <p class="glossaire__content">Un état d'enthousiasme, de vivacité ou d'abondance manifeste.</p>
+            </div>
+
+            <div id="immersion" class="glossaire__def">
+                <h2 class="glossaire__title">Transcender</h2>
+                <p class="glossaire__content">Aller au-delà des limites ou des attentes, souvent pour atteindre un
+                    niveau supérieur.
+                </p>
+            </div>
+
+            <div id="nostalgie" class="glossaire__def">
+                <h2 class="glossaire__title">Immersion</h2>
+                <p class="glossaire__content">Être profondément absorbé ou impliqué dans une expérience, au point de se
+                    sentir totalement immergé.
+                </p>
+            </div>
+
+            <div id="delorean" class="glossaire__def">
+                <h2 class="glossaire__title">Nostalgie</h2>
+                <p class="glossaire__content">Un sentiment de désir ou de nostalgie pour le passé, souvent lié à des
+                    souvenirs personnels ou à une époque révolue.
+
+                </p>
+            </div>
+
+            <div id="realisateur" class="glossaire__def">
+                <h2 class="glossaire__title">DeLorean</h2>
+                <p class="glossaire__content">Une marque de voiture, notamment connue pour le modèle DMC-12, qui est
+                    devenue célèbre grâce à son rôle dans la trilogie
+                    <em>«&nbsp;Retour vers le Futur&nbsp;».</em>
+                </p>
+            </div>
+
+            <div id="relativite" class="glossaire__def">
+                <h2 class="glossaire__title">Réalisateur</h2>
+                <p class="glossaire__content">La personne responsable de la direction artistique et créative d'un film,
+                    guidant les acteurs et l'équipe pour donner
+                    vie au scénario.
+
+                </p>
+            </div>
+
+            <div id="trou" class="glossaire__def">
+                <h2 class="glossaire__title">Relativité d'Einstein</h2>
+                <p class="glossaire__content">La théorie de la relativité d'Albert Einstein, qui comprend la relativité
+                    restreinte (qui traite des objets en mouvement
+                    rapide) et la relativité générale (qui traite de la gravité).
+
+                </p>
+            </div>
+
+            <div id="dilatation" class="glossaire__def">
+                <h2 class="glossaire__title">Trou de ver</h2>
+                <p class="glossaire__content">Une hypothétique courbure de l'espace-temps permettant des voyages plus
+                    rapides que la lumière ou des voyages à travers
+                    le temps.
+
+                </p>
+            </div>
+
+            <div id="voyage" class="glossaire__def">
+                <h2 class="glossaire__title">Dilatation du temps</h2>
+                <p class="glossaire__content">Le phénomène de l'écoulement du temps qui varie en fonction de la vitesse
+                    ou de la gravité, comme prédit par la
+                    relativité d'Einstein.
+                </p>
+            </div>
+
+            <div id="paradoxes" class="glossaire__def">
+                <h2 class="glossaire__title">Voyage temporel</h2>
+                <p class="glossaire__content">Le concept de se déplacer en avant ou en arrière dans le temps, soit dans
+                    la réalité, soit dans la fiction.
+                </p>
+            </div>
+
+            <div id="physique" class="glossaire__def">
+                <h2 class="glossaire__title">Paradoxes temporels</h2>
+                <p class="glossaire__content">Des contradictions apparentes ou des incohérences qui peuvent se produire
+                    dans les récits de voyage dans le temps, comme
+                    le paradoxe du grand-père.
+                </p>
+            </div>
+
+            <div id="trame" class="glossaire__def">
+                <h2 class="glossaire__title">Physique théorique</h2>
+                <p class="glossaire__content">La musique et les effets sonores utilisés dans un film pour renforcer
+                    l'expérience du spectateur.
+                </p>
+            </div>
+
+            <div id="controverses" class="glossaire__def">
+                <h2 class="glossaire__title">Trame sonore</h2>
+                <p class="glossaire__content">La musique et les effets sonores utilisés dans un film pour renforcer
+                    l'expérience du spectateur.
+                </p>
+            </div>
+
+            <div id="auto-realisation" class="glossaire__def">
+                <h2 class="glossaire__title">Controverses</h2>
+                <p class="glossaire__content">Des débats ou des désaccords marqués concernant un sujet donné, souvent
+                    suscités par des opinions divergentes.
+                </p>
+            </div>
+
+            <div id="hoverboard" class="glossaire__def">
+                <h2 class="glossaire__title">Auto-réalisation</h2>
+                <p class="glossaire__content">Le processus d'atteindre son plein potentiel et d'accomplir ses objectifs
+                    personnels.
+                </p>
+            </div>
+
+            <div id="intemporel" class="glossaire__def">
+                <h2 class="glossaire__title">Hoverboard</h2>
+                <p class="glossaire__content">Un type de planche volante souvent associé à la science-fiction, qui
+                    permet de se déplacer au-dessus du sol sans roues.
+                </p>
+            </div>
+
+            <div id="culture" class="glossaire__def">
+                <h2 class="glossaire__title">Intemporel</h2>
+                <p class="glossaire__content">Qui ne se démode pas avec le temps, classique et toujours d'actualité.
+                </p>
+            </div>
+
+            <div id="futurisme" class="glossaire__def">
+                <h2 class="glossaire__title">Culture populaire</h2>
+                <p class="glossaire__content">Les pratiques, les idées, les images, les objets, etc., qui sont largement
+                    répandus et influents au sein d'une société à
+                    un moment donné.
+                </p>
+            </div>
+
+            <div class="glossaire__def">
+                <h2 class="glossaire__title">Futurisme</h2>
+                <p class="glossaire__content">Un mouvement artistique et culturel du début du XXe siècle qui mettait
+                    l'accent sur la technologie, la vitesse et la
+                    modernité dans l'art et la société.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer container">
+        <div class="footer__start">
+            <a href="/en/index.html">
+                <img src="/public/icones/logo-en-blanc.svg" alt="Website logo">
+            </a>
+            <div class="footer__logo--title">
+                <p>Where we go, we don't need...
+                </p>
+                <p>A road</p>
+            </div>
+            <a href="#top">
+                <img src="/public/icones/ascenseur.svg" alt="arrow to go up">
+            </a>
+        </div>
+        <nav class="footer__menu">
+            <h5 class="footer__title">MENU</h5>
+            <ul class="footer__list list-unstyled">
+                <li>
+                    <a href="/en/infos-legales.html">Legal information</a>
+                </li>
+                <li>
+                    <a href="/en/glossaire.html">Glossary</a>
+                </li>
+                <li>
+                    <a href="/en/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__social">
+            <h5 class="footer__title">follow us</h5>
+            <ul class="footer__list--social list-unstyled">
+                <li><a href="https://www.instagram.com/meltin_01/" aria-label="Instagram">
+                        <img src="/public/icones/instagram.svg" alt="instagram logo">
+                    </a></li>
+                <li><a href="https://twitter.com/Meltin_01" aria-label="twitter">
+                        <img src="/public/icones/twitter.svg" alt="twitter logo">
+                    </a></li>
+                <li><a href="https://www.twitch.tv/meltin_01" aria-label="twitch">
+                        <img src="/public/icones/twitch.svg" alt="twitch logo">
+                    </a></li>
+                <li><a href="https://www.youtube.com/channel/UCU9V4wLM8wjw9cQOPQz14DA" aria-label="youtube">
+                        <img src="/public/icones/youtube.svg" alt="youtube logo">
+                    </a></li>
+            </ul>
+        </div>
+        <div class="footer__end">
+            <img src="/public/icones/logommi.svg" alt="MMI logo ">
+            <div class="footer__end--text">
+                <p>Mélissa Poilâne - A1
+                </p>
+                <a href="mailto:melissa.poilane@edu.univ-fcomte.fr">melissa.poilane@edu.univ-fcomte.fr</a>
+            </div>
+            <div class="footer__end--langue">
+                <a href="/fr/glossaire.html">
+                    <img src="/public/icones/FR-inactif.svg" alt="french logo">
+                </a>
+                <nav>
+                    <img src="/public/icones/EN-actif.svg" alt="english logo">
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

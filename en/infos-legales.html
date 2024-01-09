@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We don't need... Roads.</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="icon" href="/public/img/personnel.png">
+    <link rel="alternate" hreflang="fr" href="/fr/infos-legales.html">
+
+
+</head>
+
+<body id="top" x-data="{ atTop: true }">
+
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+        :class="{ 'header--atTop' : !atTop }">
+        <div class="header__start">
+            <a href="/en/index.html">
+                <img class="header__logo" src="/public/icones/logo-dgrad-en.svg" alt="Website logo">
+            </a>
+        </div>
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="Menu" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__hamburger"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/index.html">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/replique.html">The Iconic Quote</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/musique.html">The musical signature</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/realisateur.html">A genius director</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/livre.html">Can We Time Travel&nbsp;?</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/film.html">Back to the Future Part&nbsp;II</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="replique">
+        <div class="hero-other">
+            <div class="hero-other__header container">
+
+                <h1 class="hero-other__title">Informations légales</h1>
+
+                <figure class="hero__img duotone">
+                    <img src="/public/img/infos-legales.webp" alt="photo du film">
+                </figure>
+            </div>
+            <div>
+                <img class="hero-other__scroll" src="/public/icones/fleche-scroll.svg" alt="icone de fleche">
+            </div>
+
+        </div>
+        <div class="container other-page__debut">
+            <h2 class="center">mention légale</h2>
+            <p>Projet réalisé dans le cadre d’un exercice pédagogique au département
+                <span>
+                    <a href="https://mmimontbeliard.com/">MMI de Montbéliard</a>.</span>
+            </p>
+        </div>
+        <section class="container">
+            <h2>Hébergeur</h2>
+            <p class="center hebergeur">Infomaniak</p>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <div class="footer__start">
+            <a href="/en/index.html">
+                <img src="/public/icones/logo-en-blanc.svg" alt="Website logo">
+            </a>
+            <div class="footer__logo--title">
+                <p>Where we go, we don't need...
+                </p>
+                <p>A road</p>
+            </div>
+            <a href="#top">
+                <img src="/public/icones/ascenseur.svg" alt="arrow to go up">
+            </a>
+        </div>
+        <nav class="footer__menu">
+            <h5 class="footer__title">MENU</h5>
+            <ul class="footer__list list-unstyled">
+                <li>
+                    <a href="/en/infos-legales.html">Legal information</a>
+                </li>
+                <li>
+                    <a href="/en/glossaire.html">Glossary</a>
+                </li>
+                <li>
+                    <a href="/en/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__social">
+            <h5 class="footer__title">follow us</h5>
+            <ul class="footer__list--social list-unstyled">
+                <li><a href="https://www.instagram.com/meltin_01/" aria-label="Instagram">
+                        <img src="/public/icones/instagram.svg" alt="instagram logo">
+                    </a></li>
+                <li><a href="https://twitter.com/Meltin_01" aria-label="twitter">
+                        <img src="/public/icones/twitter.svg" alt="twitter logo">
+                    </a></li>
+                <li><a href="https://www.twitch.tv/meltin_01" aria-label="twitch">
+                        <img src="/public/icones/twitch.svg" alt="twitch logo">
+                    </a></li>
+                <li><a href="https://www.youtube.com/channel/UCU9V4wLM8wjw9cQOPQz14DA" aria-label="youtube">
+                        <img src="/public/icones/youtube.svg" alt="youtube logo">
+                    </a></li>
+            </ul>
+        </div>
+        <div class="footer__end">
+            <img src="/public/icones/logommi.svg" alt="MMI logo ">
+            <div class="footer__end--text">
+                <p>Mélissa Poilâne - A1
+                </p>
+                <a href="mailto:melissa.poilane@edu.univ-fcomte.fr">melissa.poilane@edu.univ-fcomte.fr</a>
+            </div>
+            <div class="footer__end--langue">
+                <a href="/fr/infos-legales.html">
+                    <img src="/public/icones/FR-inactif.svg" alt="french logo">
+                </a>
+                <nav>
+                    <img src="/public/icones/EN-actif.svg" alt="english logo">
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

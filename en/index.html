@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We don't need... Roads.</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="icon" href="/public/img/personnel.png">
+    <link rel="alternate" hreflang="fr" href="/fr/index.html">
+
+
+</head>
+
+<body id="top" x-data="{ atTop: true }">
+
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+        :class="{ 'header--atTop' : !atTop }">
+        <div class="header__start">
+            <a href="/en/index.html">
+                <img class="header__logo" src="/public/icones/logo-dgrad-en.svg" alt="Website logo">
+            </a>
+        </div>
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="Menu" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__hamburger"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/index.html">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/replique.html">The Iconic Quote</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/musique.html">The musical signature</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/realisateur.html">A genius director</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/livre.html">Can We Time Travel&nbsp;?</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/film.html">Back to the Future Part&nbsp;II</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="hero__header container">
+                <h1 class="hero__title">On n’a pas besoin… de route.</h1>
+                <figure class="hero__img duotone">
+                    <img src="/public/img/accueil.webp" alt="image de doc emmet brown">
+                </figure>
+            </div>
+            <div>
+                <img class="hero__scroll" src="/public/icones/fleche-scroll-accueil.svg" alt="icone de fleche">
+            </div>
+            <div class="hero__chapo chapo container">
+                <p class="chapo__text">Bienvenue dans l’univers intemporel de Retour vers le futur ! Ici la
+                    science-fiction et l’aventure
+                    font équipe pour vous
+                    faire voyager dans le temps.</p>
+            </div>
+        </div>
+        <div class="container-section-card">
+
+            <div class="container-card">
+
+                <article class="section__card card">
+                    <div>
+                        <h2 class="card__title">Une réplique culte</h2>
+                        <figure class="duotone-section card__img">
+                            <img src="/public/img/cards/articles/article-replique.webp" alt="image du film">
+                        </figure>
+                        <p class="card__caption">Explorez la réplique culte de Retour vers le futur&nbsp;
+                            : «&nbsp;La où l'on va, on n'a
+                            pas besoin... de
+                            route.&nbsp;»</p>
+                        <a class="card__link" href="/fr/replique.html">
+                            <div class="card__btn">
+                                lire !
+                            </div>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="container-card">
+                <article class="section__card card">
+                    <div>
+                        <h2 class="card__title">La signature musicale</h2>
+                        <figure class="duotone-section card__img">
+                            <img src="/public/img/cards/articles/article-musique.webp" alt="image de alan silvestri">
+                        </figure>
+                        <p class="card__caption">Plongez dans la musique emblématique de
+                            Retour vers le futur avec «&nbsp;Main
+                            Title, Extended Version&nbsp;»
+                        </p>
+                        <a class="card__link" href="/fr/musique.html">
+                            <div class="card__btn">
+                                lire !
+                            </div>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="container-card">
+                <article class="section__card card">
+                    <div>
+                        <h2 class="card__title">Un réalisateur de génie</h2>
+                        <figure class="duotone-section card__img">
+                            <img src="/public/img/cards/articles/article-realisateur.webp"
+                                alt="image de robert zemeckis">
+                        </figure>
+                        <p class="card__caption">Découvrez le réalisateur de génie derrière
+                            la trilogie, Robert&nbsp;Zemeckis</p>
+                        <a class="card__link" href="/fr/realisateur.html">
+                            <div class="card__btn">
+                                lire !
+                            </div>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="container-card">
+                <article class="section__card card">
+                    <div>
+                        <h2 class="card__title-2">Peut-on voyager dans le temps&nbsp;?</h2>
+                        <figure class="duotone-section card__img">
+                            <img src="/public/img/cards/articles/article-livre.webp" alt="image de gabriel chardin">
+                        </figure>
+                        <p class="card__caption">Découvrez les mystères du voyage dans le temps à travers le livre
+                            «&nbsp;Peut-on
+                            voyager dans le temps&nbsp;?&nbsp;»
+                            de Gabriel
+                            Chardin.</p>
+
+                        <a class="card__link" href="/fr/livre.html">
+                            <div class="card__btn">
+                                lire !
+                            </div>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="container-card">
+                <article class="section__card card">
+                    <div>
+                        <h2 class="card__title">Retour vers le futur&nbsp;2</h2>
+                        <figure class="duotone-section card__img">
+                            <img src="/public/img/cards/articles/article-film.webp" alt="image du film">
+                        </figure>
+                        <p class="card__caption">L'univers captivant de Retour vers le futur&nbsp;2&nbsp;:
+                            un chef-d'œuvre de la science-fiction.</p>
+                        <a class="card__link" href="/fr/film.html">
+                            <div class="card__btn">
+                                lire !
+                            </div>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <section class="container">
+            <h2>Synopsis</h2>
+            <p>La suite de la célèbre franchise de science-fiction de Robert Zemeckis, <em>«&nbsp;Retour vers le
+                    futur&nbsp;»</em>,reprend là où le premier film s'était arrêté. Marty McFly et Doc. Emmett Brown se
+                voient
+                confier une
+                nouvelle mission&nbsp;: voyager jusqu'en 2015 pour éviter un désastre qui menace la famille McFly.</p>
+            <p>Le voyage qu'ils entreprennent les emmène à une époque où les technologies
+                <span>
+                    <a href="/fr/glossaire.html#futurisme">futuristes</a>
+                </span>
+                régissent la vie
+                quotidienne.
+                Mais ils doivent faire face à des complications imprévues, comme le vol de l’almanach sportif par Biff
+                Tannen.
+            </p>
+            <p>Pour remettre les choses en ordre, ils vont se lancer dans de nouvelles aventures temporelles, jonglant
+                avec des
+                paradoxes et des voyages à travers différentes époques.</p>
+            <p>Cette suite emblématique de la série mêle habilement humour, action et réflexions sur les impacts du
+                voyage dans le
+                temps, tout en offrant un aperçu fascinant de la technologie futuriste des années&nbsp;80.</p>
+            <p>Retour vers le Futur&nbsp;2 continue de fasciner les spectateurs par son originalité et son sens de
+                l'aventure, incitant à
+                réfléchir sur l'importance de nos choix pour façonner l'avenir.</p>
+        </section>
+
+        <section class="container">
+            <h2>Rencontrez la distribution</h2>
+
+
+            <div class="center-card">
+                <div class="cast__card">
+                    <a href="/fr/robert.html">
+                        <figure class="cast__img">
+                            <img src="/public/img/cards/cast/robert.webp" alt="photo de robert zemeckis">
+                        </figure>
+                    </a>
+                    <div class="cast__text">
+                        <a href="/fr/robert.html">
+                            <div class="cast__title">
+                                <h3>Robert Zemeckis</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cast__card">
+                    <a href="/fr/bob.html">
+                        <figure class="cast__img">
+                            <img src="/public/img/cards/cast/bob.webp" alt="photo de bob gale">
+                        </figure>
+                    </a>
+                    <div class="cast__text">
+                        <a href="/fr/bob.html">
+                            <div class="cast__title">
+                                <h3>Bob Gale</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cast__card">
+                    <a href="/fr/marty.html">
+                        <figure class="cast__img">
+                            <img src="/public/img/cards/cast/marty.webp" alt="photo de michael J. Fox">
+                        </figure>
+                    </a>
+                    <div class="cast__text">
+                        <a href="/fr/marty.html">
+                            <div class="cast__title">
+                                <h3>Michael J. Fox</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cast__card">
+                    <a href="/fr/doc.html">
+                        <figure class="cast__img">
+                            <img src="/public/img/cards/cast/doc.webp" alt="photo de Christopher Lloyd">
+                        </figure>
+                    </a>
+                    <div class="cast__text">
+                        <a href="/fr/doc.html">
+                            <div class="cast__title-long">
+                                <h3>Christopher Lloyd</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cast__card">
+                    <a href="/fr/loraine.html">
+                        <figure class="cast__img">
+                            <img src="/public/img/cards/cast/lea.webp" alt="photo de Lea Thompson">
+                        </figure>
+                    </a>
+                    <div class="cast__text">
+                        <a href="/fr/loraine.html">
+                            <div class="cast__title">
+                                <h3>Lea Thompson</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cast__card">
+                    <a href="/fr/griff.html">
+                        <figure class="cast__img">
+                            <img src="/public/img/cards/cast/tom.webp" alt="photo de Tom Wilson">
+                        </figure>
+                    </a>
+                    <div class="cast__text">
+                        <a href="/fr/griff.html">
+                            <div class="cast__title">
+                                <h3>Tom Wilson</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cast__card">
+                    <a href="/fr/jennyfer.html">
+                        <figure class="cast__img">
+                            <img src="/public/img/cards/cast/claudia.webp" alt="photo de Claudia Wells">
+                        </figure>
+                    </a>
+                    <div class="cast__text">
+                        <a href="/fr/jennyfer.html">
+                            <div class="cast__title">
+                                <h3>Claudia Wells</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cast__card">
+                    <a href="/fr/mary.html">
+                        <figure class="cast__img">
+                            <img src="/public/img/cards/cast/mary.webp" alt="photo de Mary Steenburgen">
+                        </figure>
+                    </a>
+                    <div class="cast__text">
+                        <a href="/fr/mary.html">
+                            <div class="cast__title-long">
+                                <h3>Mary Steenburgen</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cast__card">
+                    <a href="/fr/crispin.html">
+                        <figure class="cast__img">
+                            <img src="/public/img/cards/cast/crispin.webp" alt="photo de Crispin Glover">
+                        </figure>
+                    </a>
+                    <div class="cast__text">
+                        <a href="/fr/crispin.html">
+                            <div class="cast__title">
+                                <h3>Crispin Glover</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="autresprojets" class="cast__card">
+                    <a href="/fr/jeffrey.html">
+                        <figure class="cast__img">
+                            <img src="/public/img/cards/cast/jeffrey.webp" alt="photo de Jeffrey  Weissman">
+                        </figure>
+                    </a>
+                    <div class="cast__text">
+                        <a href="/fr/jeffrey.html">
+                            <div class="cast__title-long">
+                                <h3>Jeffrey Weissman</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Autres projets</h2>
+            <p>En plus de mon propre projet, je tiens à mettre en lumière le travail réalisé par mes camarades de
+                classe. Voici leurs
+                projets <strong>passionnants&nbsp;:</strong></p>
+
+
+            <div class="projets__card">
+                <div class="projets__content">
+                    <h2 class="projets__title">Hugo Collin</h2>
+                    <p class="projets__text">Explorez le monde du très célèbre sorcier, Harry Potter avec cette
+                        réplique emblématique : <em>«&nbsp;Tu&nbsp;es&nbsp;un sorcier, Harry.&nbsp;».</em></p>
+                    <a class="card__link" href="https://l-ecole-des-sortileges.hugo-collin.fr">
+                        <div class="card__btn">
+                            L’école des
+                            sortilèges
+                        </div>
+                    </a>
+                </div>
+                <img class="projets__img" src="/public/img/cards/autre-projets/hugo-collin.webp" alt="mockup du site">
+            </div>
+
+
+
+            <div class="projets__card">
+                <img class="projets__img" src="/public/img/cards/autre-projets/edouart-hashimoto.webp"
+                    alt="mockup du site">
+                <div class="projets__content">
+                    <h2 class="projets__title">Edouard Hashimoto</h2>
+                    <p class="projets__text">Plongez dans un monde de sorcellerie, d'aventure et de magie, en
+                        revisitant les moments les plus
+                        emblématiques de la
+                        saga.</p>
+                    <a class="card__link" href="https://labibliothequedemagie.edouardhashimoto.fr">
+                        <div class="card__btn">
+                            Bibliothèque
+                            de
+                            Magie
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="projets__card">
+                <div class="projets__content">
+                    <h2 class="projets__title">Ethan Schmitt</h2>
+                    <p class="projets__text"><em>«&nbsp;Les idéaux sont pacifiques. L’Histoire est violente.&nbsp;»</em>
+                        Découvrez cette
+                        réplique prononcée par le
+                        Sergent Wardaddy.</p>
+                    <a class="card__link" href="https://shermanlegends.ethan-schmitt.fr/">
+                        <div class="card__btn">
+                            Sherman Legends
+                        </div>
+                    </a>
+                </div>
+                <img class="projets__img" src="/public/img/cards/autre-projets/ethan-schmitt.webp" alt="mockup du site">
+            </div>
+
+
+
+            <div class="projets__card">
+                <img class="projets__img" src="/public/img/cards/autre-projets/romain-grosjean.webp"
+                    alt="mockup du site">
+                <div class="projets__content">
+                    <h2 class="projets__title">Romain Grosjean</h2>
+                    <p class="projets__text">Entrez dans un univers de niche centré sur la franchise, les dinosaures
+                        et le paléoart avec <em>«&nbsp;Life
+                            finds a way&nbsp;».</em></p>
+                    <a class="card__link" href="https://paleo.lifefindsaway.fr/">
+                        <div class="card__btn">
+                            Life finds a way
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="projets__card">
+                <div class="projets__content">
+                    <h2 class="projets__title">claude MALANDA</h2>
+                    <p class="projets__text">Plongez dans un univers épique avec la légendaire phrase <em>«&nbsp;Wakanda
+                            Forever&nbsp;».</em> L'héritage de Black
+                        Panther vous attend.</p>
+                    <a class="card__link" href="https://kulture.claudesamba.fr/">
+                        <div class="card__btn">
+                            kulture
+                        </div>
+                    </a>
+                </div>
+                <img class="projets__img" src="/public/img/cards/autre-projets/claude-mandala.webp"
+                    alt="mockup du site">
+            </div>
+
+
+
+
+            <div class="projets__card">
+                <img class="projets__img" src="/public/img/cards/autre-projets/maxence-lallemand.webp"
+                    alt="mockup du site">
+                <div class="projets__content">
+                    <h2 class="projets__title">Maxence Lallemand</h2>
+                    <p class="projets__text">Découvrez <em>«&nbsp;The End of Evangelion&nbsp;»</em>, un film
+                        d'animation
+                        japonaise qui aborde de
+                        manière sensible certains
+                        aspects de la nature humaine.</p>
+                    <a class="card__link" href=" https://endlessrebirth.maxencelallemand.fr">
+                        <div class="card__btn">
+                            endless
+                            rebirth
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="projets__card">
+                <div class="projets__content">
+                    <h2 class="projets__title">Benjamin Bisch</h2>
+                    <p class="projets__text">Que vous soyez un sorcier chevronné ou un Moldu curieux, il y a
+                        toujours quelque chose de magique
+                        à explorer sur ce
+                        site.</p>
+                    <a class="card__link" href="#">
+                        <div class="card__btn">
+                            TITRE DU SITE
+                        </div>
+                    </a>
+                </div>
+                <img class="projets__img" src="/public/img/cards/autre-projets/bejamin-bish.webp" alt="mockup du site">
+            </div>
+
+
+
+            <div class="projets__card">
+                <img class="projets__img" src="/public/img/cards/autre-projets/oceane-robert.webp" alt="mockup du site">
+                <div class="projets__content">
+                    <h2 class="projets__title">Océane Robert</h2>
+                    <p class="projets__text">Plonger dans l’univers de <em>«&nbsp;Kung Fu Panda&nbsp;»</em> et découvrez
+                        une
+                        réplique
+                        du
+                        film qui va changer votre
+                        façon de voir les
+                        choses !</p>
+                    <a class="card__link" href="https://instant-cle.oceanerobert.fr">
+                        <div class="card__btn">
+                            instant clé
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <p>Je vous encourage à découvrir les réalisations de mes camarades. Si vous avez des questions ou
+                des
+                commentaires sur ces
+                projets, n'hésitez pas à nous contacter.</p>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <div class="footer__start">
+            <a href="/en/index.html">
+                <img src="/public/icones/logo-en-blanc.svg" alt="Website logo">
+            </a>
+            <div class="footer__logo--title">
+                <p>Where we go, we don't need...
+                </p>
+                <p>A road</p>
+            </div>
+            <a href="#top">
+                <img src="/public/icones/ascenseur.svg" alt="arrow to go up">
+            </a>
+        </div>
+        <nav class="footer__menu">
+            <h5 class="footer__title">MENU</h5>
+            <ul class="footer__list list-unstyled">
+                <li>
+                    <a href="/en/infos-legales.html">Legal information</a>
+                </li>
+                <li>
+                    <a href="/en/glossaire.html">Glossary</a>
+                </li>
+                <li>
+                    <a href="/en/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__social">
+            <h5 class="footer__title">follow us</h5>
+            <ul class="footer__list--social list-unstyled">
+                <li><a href="https://www.instagram.com/meltin_01/" aria-label="Instagram">
+                        <img src="/public/icones/instagram.svg" alt="instagram logo">
+                    </a></li>
+                <li><a href="https://twitter.com/Meltin_01" aria-label="twitter">
+                        <img src="/public/icones/twitter.svg" alt="twitter logo">
+                    </a></li>
+                <li><a href="https://www.twitch.tv/meltin_01" aria-label="twitch">
+                        <img src="/public/icones/twitch.svg" alt="twitch logo">
+                    </a></li>
+                <li><a href="https://www.youtube.com/channel/UCU9V4wLM8wjw9cQOPQz14DA" aria-label="youtube">
+                        <img src="/public/icones/youtube.svg" alt="youtube logo">
+                    </a></li>
+            </ul>
+        </div>
+        <div class="footer__end">
+            <img src="/public/icones/logommi.svg" alt="MMI logo ">
+            <div class="footer__end--text">
+                <p>Mélissa Poilâne - A1
+                </p>
+                <a href="mailto:melissa.poilane@edu.univ-fcomte.fr">melissa.poilane@edu.univ-fcomte.fr</a>
+            </div>
+            <div class="footer__end--langue">
+                <a href="/fr/index.html">
+                    <img src="/public/icones/FR-inactif.svg" alt="french logo">
+                </a>
+                <nav>
+                    <img src="/public/icones/EN-actif.svg" alt="english logo">
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

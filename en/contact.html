@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}" :class="menuIsOpen && 'noscroll'">
+<html lang="en" x-data="{menuIsOpen: false}" :class="menuIsOpen && 'noscroll'">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>On n'a pas besoin de route</title>
+    <title>We don't need... Roads.</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="icon" href="/public/img/personnel.png">
-    <link rel="alternate" hreflang="en" href="/en/contact.html">
+    <link rel="alternate" hreflang="fr" href="/fr/contact.html">
 
 
 </head>
@@ -19,8 +19,8 @@
     <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
         :class="{ 'header--atTop' : !atTop }">
         <div class="header__start">
-            <a href="/fr/index.html">
-                <img class="header__logo" src="/public/icones/logo-dgrad-fr.svg" alt="Logo du site">
+            <a href="/en/index.html">
+                <img class="header__logo" src="/public/icones/logo-dgrad-en.svg" alt="Website logo">
             </a>
         </div>
         <div class="header__end">
@@ -31,26 +31,25 @@
             <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list list-unstyled">
                     <li class="menu__item">
-                        <a class="menu__link" href="/fr/index.html">Accueil</a>
+                        <a class="menu__link" href="/en/index.html">Home</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/fr/replique.html">Une réplique culte</a>
+                        <a class="menu__link" href="/en/replique.html">The Iconic Quote</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/fr/musique.html">La signature musicale</a>
+                        <a class="menu__link" href="/en/musique.html">The musical signature</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/fr/realisateur.html">Un réalisateur de génie</a>
+                        <a class="menu__link" href="/en/realisateur.html">A genius director</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/fr/livre.html">peut-on voyager dans
-                            le temps&nbsp;?</a>
+                        <a class="menu__link" href="/en/livre.html">Can We Time Travel&nbsp;?</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/fr/film.html">Retour vers le futur&nbsp;2</a>
+                        <a class="menu__link" href="/en/film.html">Back to the Future Part&nbsp;II</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="/fr/about.html">A propos</a>
+                        <a class="menu__link" href="/en/about.html">About</a>
                     </li>
                 </ul>
             </nav>
@@ -124,61 +123,62 @@
 
     <footer class="footer container">
         <div class="footer__start">
-            <a href="/fr/index.html">
-                <img src="/public/icones/logo-fr-blanc.svg" alt="Logo du site">
+            <a href="/en/index.html">
+                <img src="/public/icones/logo-en-blanc.svg" alt="Website logo">
             </a>
             <div class="footer__logo--title">
-                <p>La ou l’on va, on n’a pas besoin... </p>
-                <p>De route</p>
+                <p>Where we go, we don't need...
+                </p>
+                <p>A road</p>
             </div>
             <a href="#top">
-                <img src="/public/icones/ascenseur.svg" alt="fleche pour monter">
+                <img src="/public/icones/ascenseur.svg" alt="arrow to go up">
             </a>
         </div>
         <nav class="footer__menu">
             <h5 class="footer__title">MENU</h5>
             <ul class="footer__list list-unstyled">
                 <li>
-                    <a href="/fr/infos-legales.html">Informations légales</a>
+                    <a href="/en/infos-legales.html">Legal information</a>
                 </li>
                 <li>
-                    <a href="/fr/glossaire.html">Glossaire</a>
+                    <a href="/en/glossaire.html">Glossary</a>
                 </li>
                 <li>
-                    <a href="/fr/contact.html">Contact</a>
+                    <a href="/en/contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
         <div class="footer__social">
-            <h5 class="footer__title">Nous suivre</h5>
+            <h5 class="footer__title">follow us</h5>
             <ul class="footer__list--social list-unstyled">
                 <li><a href="https://www.instagram.com/meltin_01/" aria-label="Instagram">
-                        <img src="/public/icones/instagram.svg" alt="logo de instagram">
+                        <img src="/public/icones/instagram.svg" alt="instagram logo">
                     </a></li>
                 <li><a href="https://twitter.com/Meltin_01" aria-label="twitter">
-                        <img src="/public/icones/twitter.svg" alt="logo de twitter">
+                        <img src="/public/icones/twitter.svg" alt="twitter logo">
                     </a></li>
                 <li><a href="https://www.twitch.tv/meltin_01" aria-label="twitch">
-                        <img src="/public/icones/twitch.svg" alt="logo de twitch">
+                        <img src="/public/icones/twitch.svg" alt="twitch logo">
                     </a></li>
                 <li><a href="https://www.youtube.com/channel/UCU9V4wLM8wjw9cQOPQz14DA" aria-label="youtube">
-                        <img src="/public/icones/youtube.svg" alt="logo de youtube">
+                        <img src="/public/icones/youtube.svg" alt="youtube logo">
                     </a></li>
             </ul>
         </div>
         <div class="footer__end">
-            <img src="/public/icones/logommi.svg" alt="logo MMI">
+            <img src="/public/icones/logommi.svg" alt="MMI logo ">
             <div class="footer__end--text">
                 <p>Mélissa Poilâne - A1
                 </p>
                 <a href="mailto:melissa.poilane@edu.univ-fcomte.fr">melissa.poilane@edu.univ-fcomte.fr</a>
             </div>
             <div class="footer__end--langue">
-                <img src="/public/icones/FR-acticf.svg" alt="logo francais">
+                <a href="/fr/contact.html">
+                    <img src="/public/icones/FR-inactif.svg" alt="french logo">
+                </a>
                 <nav>
-                    <a href="/en/contact.html">
-                        <img src="/public/icones/EN-inactif.svg" alt="logo anglais">
-                    </a>
+                    <img src="/public/icones/EN-actif.svg" alt="english logo">
                 </nav>
             </div>
         </div>

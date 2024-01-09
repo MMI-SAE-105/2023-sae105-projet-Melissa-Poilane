@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We don't need... Roads.</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="icon" href="/public/img/personnel.png">
+    <link rel="alternate" hreflang="fr" href="/fr/replique.html">
+
+
+</head>
+
+<body id="top" x-data="{ atTop: true }">
+
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 300 ? false : true )"
+        :class="{ 'header--atTop' : !atTop }">
+        <div class="header__start">
+            <a href="/en/index.html">
+                <img class="header__logo" src="/public/icones/logo-dgrad-en.svg" alt="Website logo">
+            </a>
+        </div>
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="Menu" aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__hamburger"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/index.html">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/replique.html">The Iconic Quote</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/musique.html">The musical signature</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/realisateur.html">A genius director</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/livre.html">Can We Time Travel&nbsp;?</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/film.html">Back to the Future Part&nbsp;II</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="hero-article">
+            <div class="hero-article__header container">
+
+                <h1 class="hero-article__title">La réplique emblématique&nbsp;: «&nbsp;La où l'on va, on n'a pas
+                    besoin... de route.&nbsp;»</h1>
+                <div class="hero-article__subtitle">
+                    <p>De Mélissa Poilâne</p>
+                    <p>Pulbié le 25/10/2023</p>
+                </div>
+                <figure class="hero__img duotone">
+                    <img src="/public/img/articles/replique1.webp" alt="image du film">
+                </figure>
+            </div>
+            <div>
+                <img class="hero-article__scroll" src="/public/icones/fleche-scroll.svg" alt="icone de fleche">
+            </div>
+            <div class="hero-article__chapo chapo container">
+                <p class="chapo__text">«&nbsp;La où l'on va, on n'a pas besoin... de route&nbsp;», Une expression
+                    emblématique qui résonne dans la mémoire collective des amateurs de sciencefiction.</p>
+            </div>
+        </div>
+
+        <div class="figure">
+            <figure class="figure__img">
+                <img src="/public/img/articles/replique2.webp" alt="Image du film">
+                <figcaption class="figure__legende">Universal Studios Home Entertainment - Jennifer Parker (Claudia
+                    Wells), Marty McFly (Michael J. Fox) et Doc Brown (Christopher Lloyd) dans la DeLorean volante.
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="container">
+            <h2 class="sub-title sub-title__paragraphe">Une évasion</h2>
+            <p>Lorsque l’on pense à Retour vers le futur, on pense tout de suite une <span>
+                    <a href="/fr/glossaire.html#replique">réplique</a></span> culte du film&nbsp;: </p>
+
+            <figure class="citation">
+                <blockquote>
+                    <p>« La route ? Là où l’on va, on n’a pas besoin… De route ». </p>
+                </blockquote>
+                <figcaption class="citation__name">
+                    <span>Dr. Brown </span>
+                </figcaption>
+            </figure>
+
+            <p>Cette réplique est dite par le Dr.&nbsp;Emmett Brown, elle incarne à elle seule l’esprit aventureux et la
+                magie du film.
+                <br>
+                Dr.&nbsp;Brown la prononce lorsque le public découvre que la <span>
+                    <a href="/fr/glossaire.html#delorean">DeLorean</a>
+                </span> à été équipée pour
+                voler, simplifiant ainsi le voyage dans le temps et que Marty McFly s’inquiète du manque de route pour
+                atteindre 88 milles par heure (soit environ 140 km/h), c’est donc dans ce contexte que le
+                Dr.&nbsp;Emmett Brown, avec un sourire malicieux prononça cette phrase mémorable.
+            </p>
+            <p>Ce moment du film symbolise parfaitement l’essence même du film, qui est un mélange de science-fiction,
+                d’aventure, et de la possibilité de repousser les limites du temps et de l’espace, faisant de cette
+                réplique une phrase si marquante. </p>
+            <p>Le spectateur est transporté d'un monde où les voitures roulent sur des routes à un futur où elles volent
+                dans les airs. Cette transition soudaine est rendue encore plus mémorable par l'expression
+                <span>
+                    <a href="/fr/glossaire.html#exuberance">exubérante</a>
+                </span> du Doc Brown, qui semble jouir de l'excitation de l'inconnu.
+            </p>
+        </div>
+
+        <div class="container">
+            <h2 class="sub-title sub-title__paragraphe">La symbolique</h2>
+            <p>La réplique est également emblématique en raison de son message sous-jacent. Qui signifie que lorsque
+                nous nous lançons dans une aventure, nous ne sommes pas obligés de suivre des chemins tracés, c’est une
+                référence forte a l’exploration, l’innovation et le courage de repousser les limites de notre
+                compréhension.
+                <br>
+                Par rapport au sujet même du film qui est un voyage dans le temps, elle rappelle aux spectateurs que
+                l’avenir est rempli de possibilités infini.
+            </p>
+            <p>Outre son impact sur l'intrigue du film, cette réplique est devenue un slogan populaire parmi les fans de
+                la trilogie.
+                <br>
+                Elle est régulièrement citée et est associée à l’esprit du docteur Emmett Brown. Les amateurs de retour
+                vers le futur continuent de la chérir comme un des symbole de la trilogie.
+            </p>
+            <p>Cette phrase de Dr&nbsp;Brown&nbsp;: «&nbsp;La où l'on va, on n'a pas besoin... de route.&nbsp;» est plus
+                qu’une simple réplique.
+                <br>
+                Elle incarne l'esprit du film et continue d'inspirer les spectateurs, rappelant que l'imagination et le
+                courage peuvent nous mener vers des horizons inexplorés, où les routes sont inexistantes, mais les
+                possibilités sont infinies.
+            </p>
+        </div>
+
+        <section>
+            <h2>Extrait</h2>
+            <div class="video">
+                <video controls src="https://melissapoilane.fr/videos/replique-fr.webm"></video>
+                <img class="play" src="/public/icones/play.svg" alt="logo play">
+            </div>
+        </section>
+        <section>
+            <h2>VOIR AUSSI</h2>
+            <div class="container-card">
+                <article class="section__card card">
+                    <div>
+                        <h2 class="card__title">La signature musicale</h2>
+                        <figure class="duotone-section card__img">
+                            <img src="/public/img/cards/articles/article-musique.webp" alt="image de alan silvestri">
+                        </figure>
+                        <p class="card__caption">Plongez dans la musique emblématique de
+                            Retour vers le futur&nbsp;2 avec «&nbsp;Main
+                            Title, Extended Version&nbsp;»
+                        </p>
+                        <a class="card__link" href="/fr/musique.html">
+                            <div class="card__btn">
+                                lire !
+                            </div>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container">
+        <div class="footer__start">
+            <a href="/en/index.html">
+                <img src="/public/icones/logo-en-blanc.svg" alt="Website logo">
+            </a>
+            <div class="footer__logo--title">
+                <p>Where we go, we don't need...
+                </p>
+                <p>A road</p>
+            </div>
+            <a href="#top">
+                <img src="/public/icones/ascenseur.svg" alt="arrow to go up">
+            </a>
+        </div>
+        <nav class="footer__menu">
+            <h5 class="footer__title">MENU</h5>
+            <ul class="footer__list list-unstyled">
+                <li>
+                    <a href="/en/infos-legales.html">Legal information</a>
+                </li>
+                <li>
+                    <a href="/en/glossaire.html">Glossary</a>
+                </li>
+                <li>
+                    <a href="/en/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__social">
+            <h5 class="footer__title">follow us</h5>
+            <ul class="footer__list--social list-unstyled">
+                <li><a href="https://www.instagram.com/meltin_01/" aria-label="Instagram">
+                        <img src="/public/icones/instagram.svg" alt="instagram logo">
+                    </a></li>
+                <li><a href="https://twitter.com/Meltin_01" aria-label="twitter">
+                        <img src="/public/icones/twitter.svg" alt="twitter logo">
+                    </a></li>
+                <li><a href="https://www.twitch.tv/meltin_01" aria-label="twitch">
+                        <img src="/public/icones/twitch.svg" alt="twitch logo">
+                    </a></li>
+                <li><a href="https://www.youtube.com/channel/UCU9V4wLM8wjw9cQOPQz14DA" aria-label="youtube">
+                        <img src="/public/icones/youtube.svg" alt="youtube logo">
+                    </a></li>
+            </ul>
+        </div>
+        <div class="footer__end">
+            <img src="/public/icones/logommi.svg" alt="MMI logo ">
+            <div class="footer__end--text">
+                <p>Mélissa Poilâne - A1
+                </p>
+                <a href="mailto:melissa.poilane@edu.univ-fcomte.fr">melissa.poilane@edu.univ-fcomte.fr</a>
+            </div>
+            <div class="footer__end--langue">
+                <a href="/fr/replique.html">
+                    <img src="/public/icones/FR-inactif.svg" alt="french logo">
+                </a>
+                <nav>
+                    <img src="/public/icones/EN-actif.svg" alt="english logo">
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
