@@ -56,6 +56,8 @@
 }
 
 
+
+
 .menu-btn__hamburger,
 .menu-btn__hamburger::before,
 .menu-btn__hamburger::after {
@@ -63,13 +65,18 @@
     background-color: var(--blanc);
     display: block;
     height: 2px;
-    width: 100%;
     position: absolute;
-    left: 0;
+    right: 0;
     z-index: 3;
     transition: all 0.4s ease-in-out;
+
+    width: 30px;
+    border-radius: 2px;
 }
 
+.menu-btn__hamburger {
+    width: 38px;
+}
 
 .menu-btn__hamburger::before {
     top: -10px;
@@ -84,6 +91,7 @@
 .menu-btn--open .menu-btn__hamburger::after {
     background-color: var(--blanc);
     transform: rotate(135deg);
+    width: 30px;
 }
 
 .menu-btn--open .menu-btn__hamburger::before,
